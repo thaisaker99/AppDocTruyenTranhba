@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:background="#363f44">
+      <ImageView
+          android:onClick="update"
+          android:tint="#fff"
+          android:layout_alignParentRight="true"
+          android:layout_width="60dp"
+          android:layout_height="match_parent"
+          android:padding="10dp"
+          android:src="@drawable/refresh"/>
+      <EditText
+          android:id="@+id/edtTimKiem"
+          android:background="@drawable/bg_edt"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:layout_marginLeft="80dp"
+          android:layout_marginRight="80dp"
+          android:hint="Nhập tên truyện cần tìm"
+          android:textColorHint="#716C6C"
+          android:textSize="20sp"
+          android:gravity="center"
+          android:textColor="#fff"/>
+
+
+  </RelativeLayout>
+    <GridView
+        android:id="@+id/gdvDSTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3">
+
+    </GridView>
+
+</LinearLayout>
